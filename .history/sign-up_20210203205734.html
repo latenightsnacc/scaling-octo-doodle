@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind 2.0.2--> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+    <!--Font Awesome 5.15.1-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- Bootstrap 5.0.0 Beta-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/css/uikit.min.css" />
+    <!--FAVICON-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!--Custom Stylesheet-->
+    <link rel="stylesheet" href="stylesheet/stylesheet.css">
+    <title>TRAKEET</title>
+</head>
+<body class="overflow-x-hidden min-h-screen" >
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-32">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                  <img src="assets/logo/Trakeet-Logo.png" alt="" width="150px" >
+              </a>
+              
+              <button class="navbar-toggler border-0 focus:outline-none focus:border-0 focus:shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                    <div class="flex flex-col group">
+                        <span class="w-8 border-2 border-black group-hover:w-4"></span>
+                        <span class="my-1 w-4 border-2 border-green-500 group-hover:w-8"></span>
+                        <span class="w-8 border-2 border-black group-hover:w-4"></span>
+                    </div>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="text-black font-bold active text-base uppercase hover:text-green-700 hover:no-underline " aria-current="page" href="login.html">login</a>
+                    </li>                    
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class="w-full mx-auto">
+        <!--Banner-->
+        <section id="banner" class="w-full h-100  py-10 md:my-40">
+            <div class="container">
+                <div class="font-bold text-black text-lg md:text-4xl text-center title uppercase">register</div>
+                <div class="flex justify-center my-3">
+                    <button id="company-form-btn" class="bg-white p-3 font-lg text-gray-700 hover:shadow-lg rounded focus:outline-none hover:bg-green-500 hover:text-gray-50">Company</button>
+                    <button id="individual-form-btn" class="ml-5 bg-green-500 p-3 font-lg text-gray-50 shadow-lg rounded focus:outline-none hover:bg-green-700">Individual</button>
+                </div>
+                <div id="company-form">
+                    <form class="flex flex-col w-full max-w-md mx-auto space-x-3">
+                        <!--Name-->
+                        <label for="full-name" class="pl-6 py-2 font-semibold text-gray-700">Name <span class="text-red-500">*</span></label>
+                        <input id="full-name" class="flex-1 appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" type="email" placeholder="Jane Doe">
+                        <!--Company Name-->
+                        <label for="company-name" class="pl-3 py-2 font-semibold text-gray-700">Company Name <span class="text-red-500">*</span></label>
+                        <input id="company-name" class="flex-1 appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" type="email" placeholder="Trakeet Limited">
+                        <!--Country-->
+                        <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
+                        </div>
+                        <!--Sign up Button-->
+                        <button class="flex-1 w-full bg-green-500 text-white text-base uppercase font-semibold py-3 px-4 mt-5 rounded-lg shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-200" type="button">
+                          Sign up
+                        </button>
+                    </form>   
+                </div>
+            </div>           
+        </section>
+    </main>     
+    <!--FOOTER-->
+    <footer>
+        <div class="container">
+            <ul class="flex justify-center">
+                <li>
+                    <a href="about.html" class="text-black font-semibold hover:text-green-700 hover:no-underline">About <i class="fa fsa-square"></i></a>
+                    
+                </li>
+                <li class="mx-3">
+                    <a href="faq.html" class="text-black font-semibold hover:text-green-700 hover:no-underline">FAQ</a>
+                </li>
+                <li>
+                    <a href="terms-of-service.html" class="text-black font-semibold hover:text-green-700 hover:no-underline">Terms of Service</a>
+                </li>
+                <li class="mx-3">
+                    <a href="privacy-policy.html" class="text-black font-semibold hover:text-green-700 hover:no-underline">Privacy Policy</a>
+                </li>
+            </ul>
+            <div class="row flex h-auto items-center">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <ul class="flex">
+                        <li class="mr-2">
+                            <a href="#" class="text-black hover:no-underline hover:text-green-700">
+                                <i class="fab fa-facebook-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="hover:no-underline text-black hover:text-green-700">
+                                <i class="fab fa-instagram-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="hover:no-underline text-black hover:text-green-700">
+                                <i class="fab fa-twitter-square fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a href="#" class="hover:no-underline text-black hover:text-green-700">
+                                <i class="fab fa-linkedin fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div class="flex justify-end">
+                        <p class="text-gray-900 text-md font-semibold">&copy; 2021 TRAKEET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.9/dist/js/uikit-icons.min.js"></script>  
+    <!--BOOTSTRAP CDN--> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <!--JQUERY CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+</body>
+</html>
