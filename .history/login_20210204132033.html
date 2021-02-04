@@ -20,79 +20,23 @@
     <link rel="stylesheet" href="stylesheet/stylesheet.css">
     <title>TRAKEET</title>
 </head>
-<body class="overflow-x-hidden min-h-screen" >
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-32">
-            <div class="container">
-              <a class="navbar-brand" href="index.html">
-                  <img src="assets/logo/Trakeet-Logo.png" alt="" width="150px" >
-              </a>
-              
-              <button class="navbar-toggler border-0 focus:outline-none focus:border-0 focus:shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <!-- <span class="navbar-toggler-icon"></span> -->
-                    <div class="flex flex-col group">
-                        <span class="w-8 border-2 border-black group-hover:w-4"></span>
-                        <span class="my-1 w-4 border-2 border-green-500 group-hover:w-8"></span>
-                        <span class="w-8 border-2 border-black group-hover:w-4"></span>
-                    </div>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
-              </div>
-            </div>
-        </nav>
-    </header>
+<body class="overflow-x-hidden min-h-screen bg-green-500" >
+    
     <main class="w-full mx-auto">
-        <div class="w-1/4 bg-green-700">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="text-black font-bold active text-base uppercase hover:text-green-700 hover:no-underline " aria-current="page" href="login.html">login</a>
-                </li>                    
-            </ul>
-        </div>
         <!--Banner-->
-        <section id="banner" class="w-full h-100  py-10 md:my-40">
+        <section id="banner" class="w-full h-100  py-10">
+            
+            
             <div class="container">
-                <div class="font-bold text-black text-lg md:text-4xl text-center title uppercase">register</div>
-                <div class="flex justify-center my-3">
-                    <button id="company-form-btn" class="ml-5 bg-green-500 p-3 font-lg text-gray-50 shadow-lg rounded-full focus:outline-none ">Company</button>
-                    <button id="individual-form-btn" class="ml-5 bg-green-500 p-3 font-lg text-gray-50 shadow-lg rounded-full focus:outline-none ">Individual</button>
+                <div class="flex w-full justify-center">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/logo/Trakeet-Logo.png" alt="" width="150px" >
+                    </a>
                 </div>
-                <div id="company-form">
-                    <form class="flex flex-col w-full max-w-md mx-auto space-x-3">
-                        <!--Name-->
-                        <label for="full-name" class="pl-6 py-2 font-semibold text-gray-700">Name <span class="text-red-500">*</span></label>
-                        <input id="full-name" type="text" class="flex-1 appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent"  placeholder="Jane Doe">
-                        <!--Company Name-->
-                        <label for="company-name" class="pl-3 py-2 font-semibold text-gray-700">Company Name <span class="text-red-500">*</span></label>
-                        <input id="company-name" type="text" class="flex-1 appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent"  placeholder="Trakeet Limited">
-                        <!--Email-->
-                        <label for="email-address" class="pl-3 py-2 font-semibold text-gray-700">Email <span class="text-red-500">*</span></label>
-                        <input id="email-address" type="email" class="flex-1 appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent"  placeholder="janedoe@abc.com">
-                        <!--Password-->
-                        <label for="password" class="pl-3 py-2 font-semibold text-gray-700">Password <span class="text-red-500">*</span></label>
-                        <input id="password" type="password" class="flex-1 appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent"  placeholder="$tryWQ7nKt">
-                        <!--Country-->
-                        <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
-                        </div>
-                        <!--Sign up Button-->
-                        <a href="verify-email.html">
-                            <button class="flex-1 w-full bg-green-500 text-white text-base uppercase font-semibold py-3 px-4 mt-5 rounded-lg shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-200" type="button">
-                                Sign up
-                            </button>
-                        </a>
-                    </form> 
-                    <!--FORGOT PASSWORD-->
-                    <div class="flex justify-center mt-2">
-                        <p>Already have an account? <a href="login.html" class="text-green-500 font-semibold hover:text-green-700 hover:underline capitalize">Login</a></p>
-                    </div>  
-                </div>
+                <div class="font-bold text-black text-lg  text-center title uppercase">Login</div>
                 <div id="individual-form">
                     <form class="flex flex-col w-full max-w-md mx-auto space-x-3">
-                        <!--Name-->
-                        <label for="full-name" class="pl-6 py-2 font-semibold text-gray-700">Name <span class="text-red-500">*</span></label>
-                        <input id="full-name" type="text" class="flex-1 appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent"  placeholder="Jane Doe">
-                        <!--Email-->
+                        
                         <label for="email-address" class="pl-3 py-2 font-semibold text-gray-700">Email <span class="text-red-500">*</span></label>
                         <input id="email-address" type="email" class="flex-1 appearance-none border border-transparent w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md rounded-lg text-base focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent"  placeholder="janedoe@abc.com">
                         <!--Password-->
@@ -102,16 +46,16 @@
                         <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
                         </div>
                         <!--Sign up Button-->
-                        <a href="verify-email.html">
+                        <a href="dashboard.html">
                             <button class="flex-1 w-full bg-green-500 text-white text-base uppercase font-semibold py-3 px-4 mt-5 rounded-lg shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-200" type="button">
-                                Sign up
+                                Login
                             </button>
                         </a>
                         
                     </form> 
                     <!--FORGOT PASSWORD-->
                     <div class="flex justify-center mt-2">
-                        <p>Already have an account? <a href="login.html" class="text-green-500 font-semibold hover:text-green-700 hover:underline capitalize">Login</a></p>
+                        <p>New to Trakeet? <a href="sign-up.html">Sign up</a></p>
                     </div>
                 </div>
             </div>           

@@ -24,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mb-32">
             <div class="container">
-              <a class="navbar-brand" href="index.html">
+              <a class="navbar-brand" href="#">
                   <img src="assets/logo/Trakeet-Logo.png" alt="" width="150px" >
               </a>
               
@@ -37,26 +37,25 @@
                     </div>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="text-black font-bold active text-base uppercase hover:text-green-700 hover:no-underline " aria-current="page" href="login.html">login</a>
+                    </li>                    
+                </ul>
               </div>
             </div>
         </nav>
     </header>
     <main class="w-full mx-auto">
-        <div class="w-1/4 bg-green-700">
-            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="text-black font-bold active text-base uppercase hover:text-green-700 hover:no-underline " aria-current="page" href="login.html">login</a>
-                </li>                    
-            </ul>
-        </div>
         <!--Banner-->
         <section id="banner" class="w-full h-100  py-10 md:my-40">
             <div class="container">
                 <div class="font-bold text-black text-lg md:text-4xl text-center title uppercase">register</div>
                 <div class="flex justify-center my-3">
-                    <button id="company-form-btn" class="ml-5 bg-green-500 p-3 font-lg text-gray-50 shadow-lg rounded-full focus:outline-none ">Company</button>
-                    <button id="individual-form-btn" class="ml-5 bg-green-500 p-3 font-lg text-gray-50 shadow-lg rounded-full focus:outline-none ">Individual</button>
+
+                    <button id="company-form-btn" class="ml-5 bg-green-500 p-3 font-lg text-gray-50 shadow-lg rounded focus:outline-none hover:bg-green-700">Company</button>
+                    <button id="individual-form-btn" class="ml-5 bg-green-500 p-3 font-lg text-gray-50 shadow-lg rounded-lg focus:outline-none hover:bg-green-700">Individual</button>
+
                 </div>
                 <div id="company-form">
                     <form class="flex flex-col w-full max-w-md mx-auto space-x-3">
@@ -76,16 +75,10 @@
                         <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
                         </div>
                         <!--Sign up Button-->
-                        <a href="verify-email.html">
-                            <button class="flex-1 w-full bg-green-500 text-white text-base uppercase font-semibold py-3 px-4 mt-5 rounded-lg shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-200" type="button">
-                                Sign up
-                            </button>
-                        </a>
-                    </form> 
-                    <!--FORGOT PASSWORD-->
-                    <div class="flex justify-center mt-2">
-                        <p>Already have an account? <a href="login.html" class="text-green-500 font-semibold hover:text-green-700 hover:underline capitalize">Login</a></p>
-                    </div>  
+                        <button class="flex-1 w-full bg-green-500 text-white text-base uppercase font-semibold py-3 px-4 mt-5 rounded-lg shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-200" type="button">
+                          Sign up
+                        </button>
+                    </form>   
                 </div>
                 <div id="individual-form">
                     <form class="flex flex-col w-full max-w-md mx-auto space-x-3">
@@ -102,17 +95,10 @@
                         <div class="bfh-selectbox bfh-countries" data-country="US" data-flags="true">
                         </div>
                         <!--Sign up Button-->
-                        <a href="verify-email.html">
-                            <button class="flex-1 w-full bg-green-500 text-white text-base uppercase font-semibold py-3 px-4 mt-5 rounded-lg shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-200" type="button">
-                                Sign up
-                            </button>
-                        </a>
-                        
-                    </form> 
-                    <!--FORGOT PASSWORD-->
-                    <div class="flex justify-center mt-2">
-                        <p>Already have an account? <a href="login.html" class="text-green-500 font-semibold hover:text-green-700 hover:underline capitalize">Login</a></p>
-                    </div>
+                        <button class="flex-1 w-full bg-green-500 text-white text-base uppercase font-semibold py-3 px-4 mt-5 rounded-lg shadow-md hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 focus:ring-offset-green-200" type="button">
+                          Sign up
+                        </button>
+                    </form>   
                 </div>
             </div>           
         </section>
